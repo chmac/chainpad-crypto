@@ -1,5 +1,7 @@
+/*
 (function () {
     'use strict';
+*/
 var factory = function (Nacl) {
     var Crypto = {
         Nacl: Nacl
@@ -530,6 +532,9 @@ Use-cases...
     return Crypto;
 };
 
+export default factory;
+
+/*
     if (typeof(exports) !== 'undefined') {
         exports = factory(require('tweetnacl'));
     } else if (typeof(module) !== 'undefined' && module.exports) {
@@ -544,4 +549,5 @@ Use-cases...
         window.chainpad_crypto = factory(window.nacl);
     }
 }());
+*/
 
